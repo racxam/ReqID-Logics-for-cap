@@ -1,0 +1,41 @@
+{
+  "name": "reqid",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1.10.4",
+    "@sap/cds": "^8",
+    "@sap/xssec": "^4",
+    "express": "^4",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.7.0",
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^8"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "auth": "mocked",
+      "db": {
+        "[pg]": {
+          "kind": "postgres",
+          "credentials": {
+            "host": "ep-yellow-hall-a5c6lxnj.us-east-2.aws.neon.tech",
+            "port": 5432,
+            "user": "neondb_owner",
+            "password": "sRpvS8JUina5",
+            "database": "neondb",
+            "ssl": true
+          }
+        }
+      }
+    }
+  }
+}
