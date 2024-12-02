@@ -2,7 +2,12 @@ POST http://localhost:4004/odata/v4/catservice/OfficeSrv
 Content-Type: application/json
 
 {
-  "Age": 25,
-  "Salary": 40000,
-  "Designation": "Developer"
+  "Age": 65,
+  "Salary": 10000,
+  "Designation": "Consultant"
 }
+####
+GET http://localhost:4004/odata/v4/catservice/OfficeSrv
+
+####
+GET http://localhost:4004/odata/v4/catservice/SeqTrackerSrv

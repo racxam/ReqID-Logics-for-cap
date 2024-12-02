@@ -24,17 +24,7 @@
     "requires": {
       "auth": "mocked",
       "db": {
-        "[pg]": {
-          "kind": "postgres",
-          "credentials": {
-            "host": "ep-yellow-hall-a5c6lxnj.us-east-2.aws.neon.tech",
-            "port": 5432,
-            "user": "neondb_owner",
-            "password": "sRpvS8JUina5",
-            "database": "neondb",
-            "ssl": true
-          }
-        }
+        "kind": "sqlite"
       }
     }
   }
